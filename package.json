@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "dist/app.js",
   "scripts": {
-    "start": "npx sequelize-cli db:migrate && dist/app.js",
+    "start": "npx sequelize-cli db:migrate && node dist/app.js",
     "dev": "npx sequelize-cli db:migrate && nodemon dist/app.js",
     "watch": "tsc --watch"
   },

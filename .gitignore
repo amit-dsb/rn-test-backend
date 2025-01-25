@@ -1,7 +1,7 @@
 # React
 node_modules/
 build/
-dist/
+# dist/
 *.log
 
 # OS generated files

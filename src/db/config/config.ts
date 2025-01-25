@@ -7,7 +7,13 @@ const options = {
     database: process.env.DB_NAME,
     host: process.env.DB_HOST,
     port: Number(process.env.DB_PORT),
-    dialect: 'postgres'
+    dialect: 'postgres',
+    dialectOptions: {
+        ssl: {
+            require: true,  // This enforces SSL connection
+            rejectUnauthorized: false,  // Necessary for Render PostgreSQL SSL configuration
+        },
+    },
 };
 
 export const development = options;
